@@ -11,7 +11,7 @@ export const HomeSection = () => {
 
     return (
         <>
-        <HomeContainer>
+        <HomeContainer id='Home'> 
             <HomeBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HomeBg>
@@ -19,10 +19,10 @@ export const HomeSection = () => {
                 <H1>Hola👋, soy Genesis González </H1>
                 <P>Estudiante de Ingeniería Electrónica y entusiasta del <Pink>Desarrollo Web - Frontend</Pink></P>
                 <BtnWrapper>
-                    <SquareButton to='Contact' onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <SquareButton to='Contact' onMouseEnter={onHover} onMouseLeave={onHover} spy={true} smooth={true} duration={500}>
                         Contáctame {hover ? <ArrowForward/> : <ArrowRight/>}
                     </SquareButton>
-                    <ReadMoreLink to='AboutMe'>Leer más</ReadMoreLink>
+                    <ReadMoreLink to='About' spy={true} smooth={true} duration={500}>Leer más</ReadMoreLink>
                 </BtnWrapper>
             </HomeContent>
         </HomeContainer>  

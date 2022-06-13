@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {FaTimes} from "react-icons/fa";
 import {Colors} from "../styled.colors";
 import {Link as LinkScroll} from 'react-scroll'
-import {Link as LinkRouter} from 'react-router-dom'
+// import {Link as LinkRouter} from 'react-router-dom'
 
 let {white, pink, darkBlue, blue} = Colors
 
@@ -61,6 +61,7 @@ font-size:1.5rem;
 text-decoration:none;
 list-style:none;
 
+
 &:hover{
     color: ${darkBlue};
     transition: 0.2s ease-in-out;
@@ -72,7 +73,7 @@ display:flex;
 justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkRouter)`
+export const SidebarRoute = styled(LinkScroll)` //LinkRouter redirect to " "
 white-space: nowrap;
 transition: all 0.2s ease-in-out;
 text-decoration: none;

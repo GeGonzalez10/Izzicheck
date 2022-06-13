@@ -15,12 +15,12 @@ export const Sidebar = ({isOpen, toggle}) => {
                 <SidebarMenu>
                     {SidebarData.map((item, index) =>{
                         return (
-                            <SidebarLink to={item.path} onClick={toggle}>{item.title}</SidebarLink>
+                            <SidebarLink to={item.path} onClick={toggle} spy={true} smooth={true} duration={600}>{item.title}</SidebarLink>
                         );
                     })}
                 </SidebarMenu>
                 <SidebarBtn>
-                    <SidebarRoute to="/Contact"> Contacto</SidebarRoute>
+                    <SidebarRoute to="Contact" spy={true} smooth={true} duration={500}> Contacto</SidebarRoute>
                 </SidebarBtn>
             </SidebarWrapper>
         </SidebarContainer>

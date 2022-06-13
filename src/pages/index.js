@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar';
 import { HomeSection } from '../components/HomeSection';
 import { AboutMe } from '../components/AboutMe';
 import { AboutDataObj } from '../components/AboutMe/AboutData';
+import Proyects from '../components/Proyects';
+import { RRSS } from '../components/RRSS';
+import { RRSSDataObj } from '../components/RRSS/RRSSData';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,6 +20,8 @@ export const Home = () => {
         <Navbar toggle={toggle}/>
         <HomeSection/>
         <AboutMe {...AboutDataObj}/>
+        <Proyects/>
+        <RRSS {...RRSSDataObj}/>
         </>
     );
 };

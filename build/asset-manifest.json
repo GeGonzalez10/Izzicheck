@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3809ab2.chunk.css",
+    "main.js": "/static/js/main.b3328242.chunk.js",
+    "main.js.map": "/static/js/main.b3328242.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.41eebb7d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.41eebb7d.js.map",
+    "static/js/2.64964eb8.chunk.js": "/static/js/2.64964eb8.chunk.js",
+    "static/js/2.64964eb8.chunk.js.map": "/static/js/2.64964eb8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e3809ab2.chunk.css.map": "/static/css/main.e3809ab2.chunk.css.map",
+    "static/js/2.64964eb8.chunk.js.LICENSE.txt": "/static/js/2.64964eb8.chunk.js.LICENSE.txt",
+    "static/media/Home-tiendaonline.5d4b0b82.png": "/static/media/Home-tiendaonline.5d4b0b82.png",
+    "static/media/Hotels.40cfd5a6.jpg": "/static/media/Hotels.40cfd5a6.jpg",
+    "static/media/Hotels2.ae4df772.jpg": "/static/media/Hotels2.ae4df772.jpg",
+    "static/media/NyAssistance.975ff8e0.jpg": "/static/media/NyAssistance.975ff8e0.jpg",
+    "static/media/NyAssistance1.759f9c13.jpg": "/static/media/NyAssistance1.759f9c13.jpg",
+    "static/media/RRSS.svg": "/static/media/RRSS.a2942a05.svg",
+    "static/media/aboutme.svg": "/static/media/aboutme.096e93fa.svg",
+    "static/media/figma-tiendaonline.4e1cc821.png": "/static/media/figma-tiendaonline.4e1cc821.png",
+    "static/media/video.bcd4306d.mp4": "/static/media/video.bcd4306d.mp4",
+    "static/media/wave.306c76c4.svg": "/static/media/wave.306c76c4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41eebb7d.js",
+    "static/js/2.64964eb8.chunk.js",
+    "static/css/main.e3809ab2.chunk.css",
+    "static/js/main.b3328242.chunk.js"
+  ]
+}
