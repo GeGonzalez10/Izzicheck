@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import {Link as LinkScroll} from 'react-scroll'
 import {Colors} from '../styled.colors'
 
-let {pink, white} = Colors;
+let {green, white} = Colors;
 
 export const Nav = styled.nav`
-background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
+background: transparent;
 height: 80px;
 display:flex;
 justify-content:center;
@@ -13,7 +13,7 @@ align-items:center;
 width: 100%;
 font-size: 1rem;
 letter-spacing: 1px;
-position: relative;
+position: absolute;
 top:0;
 z-index:10;
 
@@ -23,26 +23,26 @@ z-index:10;
 `
 
 export const NavbarContainer = styled.div`
-background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
-box-shadow:0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+background: transparent;
 position: fixed;
 display:flex;
-justify-content:space-between;
+justify-content:space-around;
 width:100%;
-padding: 0 24px;
+padding: 0 30px;
 height:80px;
 z-index:1;
 `
 
 export const NavLogo = styled(LinkScroll)`
 display:flex;
+margin: 0;
+padding: 0 45px;
 color: ${white};
-font-size: 1.5rem;
+font-size: 1rem;
 align-items:center;
-margin-left:24px;
 font-weight: bold;
 text-decoration:none;
-justify-self:flex-start;
+justify-self: flex-end;
 cursor: pointer;
 
 @media screen and (max-width:335px){
@@ -94,7 +94,7 @@ display:flex;
 align-items: center;
 list-style: none;
 text-align:center;
-margin-right: -22px;
+
 
 // For tablets
 @media screen and (max-width: 915px) {
@@ -111,8 +111,8 @@ height: 80px;
 `
 
 export const NavLinks = styled(LinkScroll)`
-font-weight: bold;
-font-size: 1.1rem;
+font-weight: 200;
+font-size: small;
 color: ${white};
 padding: 0 1rem;
 height: 100%;
@@ -140,13 +140,13 @@ align-items: center;
 `
 
 export const NavBtnLink = styled(LinkScroll)`
-    background: ${pink};
+    background: transparent;
     color:${white};
-    font-size:16px;
+    font-size:small;
     font-weight: bold;
     outline:none;
-    border:none;
-    border-radius: 50px;
+    border: 2px solid ${white};
+    border-radius: 8px;
     padding: 10px 22px;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
@@ -156,7 +156,7 @@ export const NavBtnLink = styled(LinkScroll)`
         &:hover{
             transition: all 0.2s ease-in-out;
             background: ${white};
-            color:${pink};
+            color:${green};
         }
     `
 
