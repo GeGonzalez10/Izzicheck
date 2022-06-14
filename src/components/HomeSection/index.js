@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import { Button, TransparentButton } from '../ButtonElements'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import {HomeContainer, HomeBg, VideoBg, HomeContent,  H1, P, Green, BtnWrapper, Arrow} from './HomeComponents'
+import {HomeContainer, ImgContent, HomeBg, VideoBg, HomeContent,  H1, P, Green, BtnWrapper, Arrow, Img} from './HomeComponents'
+
+import Image from '../../images/telefono.png'
 
 
 export const HomeSection = () => {    
@@ -34,7 +36,7 @@ const [currentTextIndex, setCurrentTextIndex] = useState(0);
         P:" "
         },
         {
-        primaryText: "Valida los pagos (zelle)",
+        primaryText: "Valida los pagos (Zelle)",
         secondaryText: "recibidos, al instante y de manera segura.",
         p:" "
         },
@@ -76,6 +78,9 @@ const [currentTextIndex, setCurrentTextIndex] = useState(0);
                     <Button to='About' spy={true} smooth={true} duration={500} style={{marginLeft:"25px"}}>Conocer más sobre premium</Button>
                 </BtnWrapper>
             </HomeContent>
+            <ImgContent>
+                <Img src={Image} alt="Teléfono"></Img>
+            </ImgContent>
         </HomeContainer>  
         </>
     )

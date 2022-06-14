@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { Button } from './../ButtonElements';
 import {SidebarContainer, SidebarIcon, CloseIcon, SidebarWrapper, 
-        SidebarMenu, SidebarLink, SidebarBtn, SidebarRoute} from './SidebarComponents'
+        SidebarMenu, SidebarLink, SidebarBtn} from './SidebarComponents'
 import {SidebarData} from './SidebarData'
 
 export const Sidebar = ({isOpen, toggle}) => {
@@ -20,7 +20,7 @@ export const Sidebar = ({isOpen, toggle}) => {
                     })}
                 </SidebarMenu>
                 <SidebarBtn>
-                    <SidebarRoute to="Contact" spy={true} smooth={true} duration={500}> Contacto</SidebarRoute>
+                    <Button primary to="Contact" spy={true} smooth={true} duration={500}> Contacto</Button>
                 </SidebarBtn>
             </SidebarWrapper>
         </SidebarContainer>

@@ -5,7 +5,7 @@ import {Colors} from "../styled.colors";
 import {Link as LinkScroll} from 'react-scroll'
 // import {Link as LinkRouter} from 'react-router-dom'
 
-let {white, pink, darkBlue, blue} = Colors
+let {white, purple, darkBlue, blue} = Colors
 
 export const SidebarContainer = styled.aside`
 position: fixed;
@@ -22,7 +22,7 @@ left:0;
 `
 
 export const CloseIcon = styled(FaTimes)`
-color: ${pink};
+color: ${purple};
 `
 
 export const SidebarIcon = styled.div `
@@ -36,7 +36,7 @@ cursor:pointer;
 `
 
 export const SidebarWrapper = styled.div`
-color: ${pink};
+color: ${purple};
 `
 
 export const SidebarMenu = styled.ul`
@@ -55,7 +55,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 transition: 0.2s ease-in-out;
-color: ${pink};
+color: ${purple};
 cursor:pointer;
 font-size:1.5rem;
 text-decoration:none;
@@ -70,26 +70,6 @@ list-style:none;
 
 export const SidebarBtn = styled.div`
 display:flex;
+padding:10px;
 justify-content: center;
-`
-
-export const SidebarRoute = styled(LinkScroll)` //LinkRouter redirect to " "
-white-space: nowrap;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
-font-size:16px;
-font-weight:bold;
-cursor:pointer;
-color: ${white};
-background: ${blue};
-padding: 16px 64px;
-border-radius:50px;
-outline:none; 
-border:none;
-
-&:hover{
-    color: ${white};
-    background:${darkBlue};
-    transition: 0.2s ease-in-out;
-}
 `

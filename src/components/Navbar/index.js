@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarComponents'
+import {Nav, NavbarContainer, Img, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarComponents'
+import Image from '../../images/izzicheckLogo.svg'
 
 export const Navbar = ({toggle}) => {
 const Sections = [ 
@@ -44,7 +45,7 @@ const Sections = [
         <Nav>
             <NavbarContainer>
                 <NavLogo to='Home' spy={true} smooth={true} duration={500}>
-                    Izzi 
+                    <Img src={Image} alt='Logo'/>
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars/>

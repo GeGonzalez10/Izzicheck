@@ -9,7 +9,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 background: ${({primary}) => (primary ? "#22E38F" : "transparent")};
 white-space: nowrap; 
 padding: ${({big}) => (big? "18px 28px" : "15px 15px")};
-color: #F5F5F5;
+color: ${({green}) => (green? "#22E38F" : "#F5F5F5")}; 
 font-size: ${({fontBig}) => (fontBig? "20px" : "16px")};
 outline: none;
 font-weight: bold;

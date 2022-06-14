@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {AboutWrap, AboutRow, Col1, TopLine, Subtitle, TextWrapper,Heading, Img, Col2, ImgWrap} from './../AboutMe/AboutElements'
+import {Wrap, Row, Col1, Subtitle, TextWrapper,Heading, Img, Col2, ImgWrap} from '../Section2/S2Elements'
 import { RRSSContainer, TWrapper, Icons, Links} from './RRSSElements';
 
 import Image from '../../images/RRSS.svg'
@@ -8,15 +8,14 @@ import {VscGithub, VscLocation, VscTwitter} from 'react-icons/vsc'
 import {GrLinkedinOption} from 'react-icons/gr'
 
 
-export const RRSS = ({id, imgStart, topLine, lightText, heading, darkText, description, alt}) => {
+export const RRSS = ({id, imgStart, lightText, heading, darkText, description, alt}) => {
     return (
         <>
         <RRSSContainer id={id}>
-            <AboutWrap>
-                <AboutRow imgStart={imgStart}>
+            <Wrap>
+                <Row imgStart={imgStart}>
                     <Col1>
                         <TWrapper>
-                            <TopLine >{topLine}</TopLine>
                             <Heading lightText={lightText}>{heading}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                         </TWrapper>
@@ -34,8 +33,8 @@ export const RRSS = ({id, imgStart, topLine, lightText, heading, darkText, descr
                     <Col2>
                         <ImgWrap> <Img src={Image} alt={alt}/></ImgWrap>
                     </Col2>
-                </AboutRow>
-            </AboutWrap>
+                </Row>
+            </Wrap>
         </RRSSContainer> 
         </>
     )

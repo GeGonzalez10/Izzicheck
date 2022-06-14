@@ -23,7 +23,8 @@ z-index:10;
 `
 
 export const NavbarContainer = styled.div`
-background: transparent;
+background: rgb(127,32,212);
+background: linear-gradient(80deg, rgba(127,32,212,0.4906337535014006) 10%, rgba(82,123,179,0.5270483193277311) 27%, rgba(62,168,164,0.6250875350140056) 45%, rgba(52,190,156,0.4962359943977591) 67%, rgba(35,225,144,0.5242471988795518) 100%);
 position: fixed;
 display:flex;
 justify-content:space-around;
@@ -48,6 +49,12 @@ cursor: pointer;
 @media screen and (max-width:335px){
     font-size: 1rem;
 }
+`
+export const Img = styled.img`
+width: 100%;
+max-width:74px;
+height: 100%;
+max-height:74px;
 `
 
 export const MobileIcon = styled.div `
@@ -122,7 +129,7 @@ text-decoration: none;
 align-items: center;
 
     &.active{
-        border-bottom: ${p=>p.borderBottom || "3px solid #FC5185"};
+        border-bottom: ${p=>p.borderBottom || "3px solid #22E38F"};
     }
 `
 

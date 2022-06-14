@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import { HomeSection } from '../components/HomeSection';
-import { AboutMe } from '../components/AboutMe';
-import { AboutDataObj } from '../components/AboutMe/AboutData';
+import { Section2 } from '../components/Section2';
+import { AboutDataObj } from '../components/Section2/AboutData';
 import Proyects from '../components/Proyects';
 import { RRSS } from '../components/RRSS';
 import { RRSSDataObj } from '../components/RRSS/RRSSData';
@@ -19,7 +19,7 @@ export const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <HomeSection/>
-        <AboutMe {...AboutDataObj}/>
+        <Section2 {...AboutDataObj}/>
         <Proyects/>
         <RRSS {...RRSSDataObj}/>
         </>

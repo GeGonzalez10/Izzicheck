@@ -1,18 +1,31 @@
 export const SidebarData = [
     {
-        title: '🍭 Home',
-        path: 'Home',
+        title:'Nosotros',
+        path: "Home",
     },
     {
-        title: '💌 Sobre mí',
-        path: 'About',
+        title:'Ventajas',
+        path: "About",
     },
-   /*  {
-        title: '✨ Experiencia',
-        path: 'Experience',
-    }, */
     {
-        title: '🔭 Proyectos',
-        path: 'Proyects',
-    }
+        title:'Planes',
+        path: "Proyects",
+    },
+    {
+        title:'Cómo funciona',
+        path: "Proyects",
+    },
+    {
+        title:'A quiénes servimos',
+        path: "Proyects",
+    },
+    {
+        title:'Preguntas Frecuentes',
+        path: "Proyects",
+    },
+    {
+        title:'Contáctanos',
+        path: "Contact",
+    },
 ];
+

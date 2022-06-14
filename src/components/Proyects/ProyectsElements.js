@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Colors } from '../styled.colors';
-import {Heading} from '../AboutMe/AboutElements'
+import {Heading} from '../Section2/S2Elements'
 
 let {pink, white} = Colors;
 
