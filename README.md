@@ -1,5 +1,5 @@
-# Portfolio1.0 - Landing Page
-This is a personal landing page building using ReactsJs with Styled Components library.
+ Landing Page
+landing page building using ReactsJs with Styled Components library.
 ## External Requirements 📋
  * NPM
 ## Internal Requirements 👾
@@ -17,5 +17,3 @@ You will also see any lint errors in the console.
 * [react-router-dom](https://reactrouter.com/web/guides/quick-start) 
 * [react-dom](https://reactrouter.com/)
 * [react-scroll](https://www.npmjs.com/package/react-scroll)
-
-* [Pexels Videos](https://www.pexels.com/videos/)
